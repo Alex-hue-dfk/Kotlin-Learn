@@ -497,8 +497,7 @@ fun main() = KoolApplication {
             for (line in hud.log.use()){
                 Text(line){ modifier.font(sizes.smallText)}
             }
-        }
-        if (hud.victoryVisible.use()) {
+            if (hud.victoryVisible.use()) {
             addPanelSurface {
                 modifier
                     .align(AlignmentX.Center, AlignmentY.Center)
@@ -534,5 +533,7 @@ fun main() = KoolApplication {
                 }
             }
         }
+        }
+
     }
 }
